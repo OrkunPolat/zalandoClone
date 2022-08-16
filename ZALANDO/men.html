@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>ZALANDO | High Street to Shopping</title>
+
+    <style>
+        body{
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .help-and-contact{
+            margin-left: 340px;
+        }
+        .freedel{
+            margin-left: -150px;
+
+        }
+        
+
+        .first-header{
+            background-color:rgb(248, 248, 248) ;
+        }
+        .first-text{
+            font-size: 12px;
+            font-weight: 600;
+            color: rgb(95, 95, 95);
+        }
+        .first-padding{
+            padding-bottom: 4px;
+            
+        }
+        .women{
+            color: white!important;
+            background-color: black!important;
+            transition-duration: 0s!important;
+            
+        }
+        .btn:hover{
+            background-color: rgb(204, 204, 204);
+        }
+        
+        .brand-name{
+            max-width: 300px;
+            margin-left: -110px;
+        }
+        
+        .second-text{
+            font-size: 16px;
+            font-weight: 500;
+            color: black;
+
+
+        }
+        .second-photo{
+            
+            margin-bottom: -27px;
+            margin-left: -45px;
+        }
+        .en{
+            font-size: 18px;
+            
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+            
+        }
+        .main-text{
+            font-size: 15px;
+            color: rgb(77, 76, 76);  
+        }
+        .site-search{
+
+            width: 240px;
+            height: 34px;
+            margin-top: -9px;
+            background-color: rgb(248, 248, 248);
+            border: none;
+            transition-duration: .9s;
+            
+            
+            
+        }
+        .site-search:focus{
+            
+            
+            transition-duration: .9s;
+            width: 540px;
+            max-width: 540px;
+            z-index: 3;
+  
+        }
+        .mainke{
+            opacity: 0.3;
+
+        }
+        .mainke2{
+            opacity: 0.44;
+
+        }
+        .mainke3{
+            opacity: 0.6;
+
+        }
+        .mainke4>.mainke5{
+            opacity: 0.43;
+
+        }
+        .mainke4>.mainke5{
+            opacity: 0.13;
+        }
+        .main-card{
+            background-color: greenyellow;
+            height: 530px;
+            
+        }
+        .all{
+            transition-duration: .07s;
+        }
+        .all:hover{
+            transition-duration: .07s;
+            border-bottom: 3px solid black;
+        }
+        
+        .sub-menu-1{
+            
+            display: none;
+            width: 1300px;
+            height: 0;
+            font-size: 14px;
+            
+            
+        }
+        .sub-menu-2{
+            display: none;
+            width: 1300px;
+            margin: -96.5px;
+            height: 0;
+            font-size: 14px;   
+        }
+        .sub-menu-3{
+            display: none;
+            width: 1300px;
+            margin: -193px;
+            height: 0;
+            font-size: 14px;
+        }
+        .sub-menu-4{
+            display: none;
+            width: 1300px;
+            margin: -289.5px;
+            height: 0;
+            font-size: 14px;
+        }
+        .sub-menu-5{
+            display: none;
+            width: 1300px;
+            margin: -386px;
+            height: 0;
+            font-size: 14px;
+        }
+        .sub-menu-6{
+            display: none;
+            width: 1300px;
+            margin: -486.5px;
+            height: 0;
+            font-size: 14px;
+        }
+        .sub-menu-7{
+            display: none;
+            width: 1300px;
+            margin: -583px;
+            height: 0;
+            font-size: 14px;
+        }
+        .sub-menu-8{
+            display: none;
+            width: 1300px;
+            margin: -679.5px;
+            height: 0;
+            font-size: 14px;
+        }
+        .sub-menu-9{
+            display: none;
+            width: 1300px;
+            margin: -776px;
+            height: 0;
+            font-size: 14px;
+        }
+        .sub-menu-10{
+            display: none;
+            width: 1300px;
+            margin: -872.5px;
+            height: 0;
+            font-size: 14px;
+        }
+        .first:hover .sub-menu-1{
+            
+            display: block;
+            position: absolute;
+            margin-top: 0px;
+        }
+        .first:hover .sub-menu-2{
+            
+            display: block;
+            position: absolute;
+            margin-top: 0px;
+        }
+        .first:hover .sub-menu-3{
+            
+            display: block;
+            position: absolute;
+            margin-top: 0px;
+        }
+        .first:hover .sub-menu-4{
+            
+            display: block;
+            position: absolute;
+            margin-top: 0px;
+        }
+        .first:hover .sub-menu-5{
+            
+            display: block;
+            position: absolute;
+            margin-top: 0px;
+        }
+        .first:hover .sub-menu-6{
+            
+            display: block;
+            position: absolute;
+            margin-top: 0px;
+        }
+        .first:hover .sub-menu-7{
+            
+            display: block;
+            position: absolute;
+            margin-top: 0px;
+        }
+        .first:hover .sub-menu-8{
+            
+            display: block;
+            position: absolute;
+            margin-top: 0px;
+        }
+        .first:hover .sub-menu-9{
+            
+            display: block;
+            position: absolute;
+            margin-top: 0px;
+        }
+        .first:hover .sub-menu-10{
+            
+            display: block;
+            position: absolute;
+            margin-top: 0px;
+        }
+
+        
+        .img1{
+            width: 350px;
+        }
+        .spe{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 18px;
+            
+        }
+        .cards-img{
+            width: 500px;
+            margin-left: 340px;
+            margin-top: 45px;
+        }
+        .cards{
+            background-color: rgb(185, 64, 16);
+            color: azure;
+        }
+        .aho:hover{
+            border-bottom: 2px solid black;
+            color: black;
+        }
+        .ahoy:hover{
+            color: black;
+
+        }
+        .ss:hover{
+            opacity: 0.7;
+
+        }
+        .first-button{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            background-color: black;
+            color: white;
+            font-weight: 700;
+            
+        }
+        .dropdown-menu{
+            width: 300px;
+            height: 430px;
+        }
+        .text-primary{
+            font-size: 14px;
+        }
+        .second-button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border: 2px solid black;
+            border: 4%;
+            height: 40px;
+
+        }
+        .fc{
+            font-weight: 700;
+            font-size: 16px;
+
+        }
+        .sc{
+            font-weight: 300;
+            font-size: 12px;
+
+        }
+        .tc{
+            font-weight: 700;
+            font-size: 18px;
+
+        }
+        .fc{
+            font-weight: 600;
+            
+        }
+        .heightke{
+            height: 280px;
+        }
+       .oy{
+        background-color: rgb(245, 231, 215);
+       }
+       .heightke{
+            height: 280px;
+        }
+       .oy{
+        background-color: rgb(245, 231, 215);
+       }
+       
+        
+        
+
+    </style>
+    
+</head>
+<body>
+<!-- top -->
+    <div>
+        <div class="row first-header first-padding ">
+            <div class="col-4 help-and-contact"><a href="#" class="first-text"> Help and contact </a></div>
+            
+            <div class="col-4 freedel"><a href="#" class="first-text" >FREE DELIVERY & RETURNS*</a></div>
+            
+            <div class="col-2 policy"> <a href="#" class="first-text" >100-day return policy</a> </div>
+        </div>
+    </div>
+    
+
+    <!--  brand and second-top -->
+    <div class="container">
+        <div class="row second-header py-1 d-flex justify-content-between">
+            <div class="col-4 d-flex text-center">
+                <div class="col-3"><a href="women.html" class="second-text btn men border-0">Women</a></div>
+                <div class="col-2"><a href="men.html" class="second-text btn women border-0">Men</a></div>
+                <div class="col-3"><a href="kids.html" class="second-text btn kids border-0">Kids</a></div>
+            </div>
+            
+            <div class="col-4 brand-name">
+                <a href="#">
+            <img src="logo_default.svg" alt="first">
+            <img src="discoverPlus_en.svg" alt="second" class="second-photo"></a></div>
+            
+            <div class="col-2 d-flex justify-content-between">
+                <div class="col-5"><a href="#""><span class="en">EN</span>
+                     <i class="fa-solid fa-globe fs-4"></i></a> </div>
+
+
+
+
+
+                <div class="col dropdown dropstart "><a href="#" data-bs-toggle="dropdown"><i class="fa-regular fa-user fs-4"></i></a>
+                    <div class="dropdown-menu  mt-4 border-3 border-dark" >
+                        <div class="first-button mx-2 py-3">Login</div>
+                        <a href="#" class="dropdown-item "><a href="#" class="mx-3 my-3 text-primary">Register now</a>- It only takes a minute.</a>
+                        <hr class="dropdown-divider" />
+                        <a href="#" class="dropdown-item my-4 all">Your Account </a>
+                        <a href="#" class="dropdown-item my-4 all">Orders</a>
+                        <a href="#" class="dropdown-item my-4 all">Return an item</a>
+                        <a href="#" class="dropdown-item all">Help & FAQ</a>
+                    </div>
+                </div>   
+                
+                
+
+
+                <div class="col"><a href="#"><i class="fa-regular fa-heart fs-4"></i></a></div>
+
+
+                <div class="col dropdown dropstart "><a href="#" data-bs-toggle="dropdown"><i class="fa-solid fa-basket-shopping fa-xl"></i></a>
+                    <div class="dropdown-menu heightke mt-4 text-center border-3 border-dark" >
+                        <p class="mt-4 fc">YOUR BAG IS EMPTY</p>
+                        <p class="mb-4 mt-2 sc mx-4">Go. GO fill it up with all your fashion hope and dreams</p>
+                        <p class="my-4 tc oy">DON'T KNOW WHERE TO START?</p>
+                        <div class="second-button mx-3 fc ">SEE WHAT'S NEW</div>
+                       
+                       
+                        
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </div>
+    
+    <!-- main part -->
+    <div class="container">
+        <div class="row d-flex justify-content-start main-text text-center pt-1 ">
+            <div class="col first all "><a href="#"class="ahoy">Get</a>  
+                <div class="sub-menu-1 mt-1 ">
+                    
+                    <div class="container text-start">
+                        <div class="row bg-light pt-3 ">
+                            <div class="col">
+                                <p class="spe">Get the Look</p>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> All outfits</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Casual outfits</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Streetwear outfits</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Sporty outfits</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Bold outfits</p></a>
+                            </div>
+                            <div class="col">
+                                <p class="spe">Trends</p>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Festival Season</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Romantic looks</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Beach-inspired looks</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Resort shirts</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Streetwear edit</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Casual holiday styles</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Genderless fashion</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Futuristic utility</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Summer t-shirts</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Timeless mautical styles</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Summer sandals</p></a>
+                            </div>
+                            <div class="col">
+                                <p class="spe">Highlights</p>
+                                <p>#shoplocal</p>
+                                <p>Plus Early Access</p>
+                            </div>
+                            <div class="col">
+                                <a href="#"><img src="4ee91971752241abb92e14754371ea58.webp" alt="" class="img1"></a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div></div>
+            <div class="col first all "><a href="#"class="ahoy">Clothing</a>
+                <div class="sub-menu-2 mt-1">
+                    
+                    <div class="container text-start ">
+                        <div class="row bg-light pt-3">
+                            <div class="col">
+                                <p class="spe">Clothing</p>
+                                <p><i class="fa-solid fa-shapes"></i><span class="aho"> All categories</span></p>
+                                <p><i class="fa-solid fa-shapes"></i><span class="aho"> NEW in Clothing</span></p>
+                                <p><i class="fa-solid fa-shapes"></i><span class="aho"> Zalando exclusives</span></p>
+                                <p><i class="fa-solid fa-shapes"></i><span class="aho"> Tshirts & Polos</span></p>
+                                <p><i class="fa-solid fa-shapes"></i><span class="aho"> Shirts</span></p>
+                                <p><i class="fa-solid fa-shapes"></i><span class="aho"> Sweatshirts & Hoodies</span></p>
+                                <p><i class="fa-solid fa-shapes"></i><span class="aho"> Jeans</span></p>
+                                <p><i class="fa-solid fa-shapes"></i><span class="aho"> Trousers</span></p>
+                                <p><i class="fa-solid fa-shapes"></i><span class="aho"> Shorts</span></p>
+                                <p><i class="fa-solid fa-shapes"></i><span class="aho"> Sportswear</span></p>
+                                <p><i class="fa-solid fa-shapes"></i><span class="aho"> Tracksuit & Joggers</span></p>
+                            </div>
+                            <div class="col">
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Suits & Tailoring</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Jackets</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Coats </p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> KnitWear</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Swimwear</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Plus Size</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> More sustainable clothing</p></a>
+                                <p class="spe"class="aho">Highlights</p>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Unisex</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Essentials</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Personal Styling</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Special Occasions</p></a>
+                            </div>
+                            <div class="col">
+                                <p class="spe">Underwear</p>
+                                <p><i class="fa-solid fa-shapes"></i><a href="#"class="aho"> All in underwear</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href="#"class="aho"> NEW in underwear</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href="#"class="aho"> Underwear sets</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href="#"class="aho"> Underpants</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href="#"class="aho"> Boxer shorts</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href="#"class="aho"> Undershirts</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href="#"class="aho"> Socks</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href="#"class="aho"> Pyjamas</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href="#"class="aho"> Pyjama trousers</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href="#"class="aho"> Loungewear & Sleepwear</p></a>
+                                <p><i class="fa-solid fa-shapes"></i>Bathrobes</p>
+                            </div>
+                            <div class="col">
+                                <a href="#"><img src="3c85b3704fff4eb9a56ca59a5c9d0511.webp" alt="" class="img1"></a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div></div>
+            <div class="col first all"><a href="#"class="ahoy">Shoes</a>
+                <div class="sub-menu-3 mt-1">
+                    
+                    <div class="container text-start">
+                        <div class="row bg-light pt-3">
+                            <div class="col">
+                                <p class="spe">Shoes</p>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> All kategories</p></a> 
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> NEW in Shoes</p></a> 
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Zalando Exclusives</p></a> 
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Trainer </p></a> 
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Pumps </p></a> 
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> High Heels </p></a> 
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Ankle boots </p></a> 
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Boots </p></a> 
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Flat Shoes </p></a> 
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Loafers </p></a> 
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Lace-up Shoes </p></a> 
+                                
+                            </div>
+                            <div class="col">
+                                
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Ballet pumps </p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Sandals </p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Mules</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Beach shoes</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Outdoor shoes </p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Sport shoes</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Bridal shoes</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Business shoes</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Slippers</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Wide fit shoes</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Summer sandals</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Shoes accessories </p></a>
+                            </div>
+                            <div class="col">
+                                <p class="spe">Highlights</p>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> footwear trends</p> </a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Sneaker  </p> </a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Sneaker Hop Drops  </p> </a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Release Calendar  </p> </a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> More Sustainable  </p> </a>
+                            </div>
+                            <div class="col">
+                                <a href="#"><img src="7d2e8436-5bb9-4b2c-a8e5-1e2188b088ae.webp" alt="" class="img1"></a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div></div>
+            <div class="col first all"><a href="#"class="ahoy">Sports</a>
+                <div class="sub-menu-4 mt-1">
+                    
+                    <div class="container text-start">
+                        <div class="row bg-light pt-3">
+                            <div class="col">
+                                <p class="spe">Get the Look</p>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> All outfits</p></a> 
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Casual outfits</p></a> 
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Streetwear outfits</p></a> 
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Sporty outfits</p></a> 
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Bold outfits</p></a> 
+                            </div>
+                            <div class="col">
+                                <p class="spe">Trends</p>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Festival Season</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Romantic looks</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Beach-inspired looks</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Resort shirts</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Streetwear edit</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Casual holiday styles</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Genderless fashion</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Futuristic utility</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Summer t-shirts</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Timeless mautical styles</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Summer sandals</p></a>
+                            </div>
+                            <div class="col">
+                                <p class="spe">Highlights</p>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> #shoplocal</p> </a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Plus Early Access</p> </a>
+                            </div>
+                            <div class="col">
+                                <a href="#"><img src="b0e779a7d7bd46c4ab3def121dbd6e80.webp" alt="" class="img1"></a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div></div>
+            <div class="col first all"><a href="#"class="ahoy">Accessories</a>
+                <div class="sub-menu-5 mt-1">
+                    
+                    <div class="container text-start">
+                        <div class="row bg-light pt-3">
+                            <div class="col">
+                                <p class="spe">Clothing</p>
+                                <p><i class="fa-solid fa-shapes"></i><span class="aho"> All categories</span></p>
+                                <p><i class="fa-solid fa-shapes"></i><span class="aho"> NEW in Clothing</span></p>
+                                <p><i class="fa-solid fa-shapes"></i><span class="aho"> Zalando exclusives</span></p>
+                                <p><i class="fa-solid fa-shapes"></i><span class="aho"> Tshirts & Polos</span></p>
+                                <p><i class="fa-solid fa-shapes"></i><span class="aho"> Shirts</span></p>
+                                <p><i class="fa-solid fa-shapes"></i><span class="aho"> Sweatshirts & Hoodies</span></p>
+                                <p><i class="fa-solid fa-shapes"></i><span class="aho"> Jeans</span></p>
+                                <p><i class="fa-solid fa-shapes"></i><span class="aho"> Trousers</span></p>
+                                <p><i class="fa-solid fa-shapes"></i><span class="aho"> Shorts</span></p>
+                                <p><i class="fa-solid fa-shapes"></i><span class="aho"> Sportswear</span></p>
+                                <p><i class="fa-solid fa-shapes"></i><span class="aho"> Tracksuit & Joggers</span></p>
+                            </div>
+                            <div class="col">
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Suits & Tailoring</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Jackets</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Coats </p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> KnitWear</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Swimwear</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Plus Size</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> More sustainable clothing</p></a>
+                                <p class="spe">Highlights</p>class="aho"
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Unisex</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Essentials</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Personal Styling</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Special Occasions</p></a>
+                            </div>
+                            <div class="col">
+                                <p class="spe">Underwear</p>
+                                <p><i class="fa-solid fa-shapes"></i><a href="#"class="aho"> All in underwear</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href="#"class="aho"> NEW in underwear</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href="#"class="aho"> Underwear sets</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href="#"class="aho"> Underpants</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href="#"class="aho"> Boxer shorts</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href="#"class="aho"> Undershirts</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href="#"class="aho"> Socks</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href="#"class="aho"> Pyjamas</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href="#"class="aho"> Pyjama trousers</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href="#"class="aho"> Loungewear & Sleepwear</p></a>
+                                <p><i class="fa-solid fa-shapes"></i>Bathrobes</p>
+                            </div>
+                            <div class="col">
+                                <a href="#"><img src="237e1f17e9ee4df1a07ec2a3d195c993.webp" alt="" class="img1"></a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div></div>
+            <div class="col first all"><a href="#"class="ahoy">Beauty</a>
+                <div class="sub-menu-6 mt-1">
+                    
+                    <div class="container text-start">
+                        <div class="row bg-light pt-3">
+                            <div class="col">
+                                <p class="spe">Get the Look</p>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> All outfits</p></a> 
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Casual outfits</p></a> 
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Streetwear outfits</p></a> 
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Sporty outfits</p></a> 
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Bold outfits</p></a> 
+                            </div>
+                            <div class="col">
+                                <p class="spe">Trends</p>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Festival Season</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Romantic looks</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Beach-inspired looks</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Resort shirts</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Streetwear edit</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Casual holiday styles</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Genderless fashion</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Futuristic utility</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Summer t-shirts</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Timeless mautical styles</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Summer sandals</p></a>
+                            </div>
+                            <div class="col">
+                                <p class="spe">Highlights</p>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> #shoplocal</p> </a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Plus Early Access</p> </a>
+                            </div>
+                            <div class="col">
+                                <a href="#"><img src="237e1f17e9ee4df1a07ec2a3d195c993.webp" alt="" class="img1"></a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div></div>
+            <div class="col first all"><a href="#"class="ahoy">Designer</a>
+                <div class="sub-menu-7 mt-1">
+                    
+                    <div class="container text-start">
+                        <div class="row bg-light pt-3">
+                            <div class="col">
+                                <p class="spe">Shoes</p>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> All kategories</p></a> 
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> NEW in Shoes</p></a> 
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Zalando Exclusives</p></a> 
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Trainer </p></a> 
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Pumps </p></a> 
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> High Heels </p></a> 
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Ankle boots </p></a> 
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Boots </p></a> 
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Flat Shoes </p></a> 
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Loafers </p></a> 
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Lace-up Shoes </p></a> 
+                                
+                            </div>
+                            <div class="col">
+                                
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Ballet pumps </p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Sandals </p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Mules</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Beach shoes</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Outdoor shoes </p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Sport shoes</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Bridal shoes</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Business shoes</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Slippers</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Wide fit shoes</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Summer sandals</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Shoes accessories </p></a>
+                            </div>
+                            <div class="col">
+                                <p class="spe">Highlights</p>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> footwear trends</p> </a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Sneaker  </p> </a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Sneaker Hop Drops  </p> </a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Release Calendar  </p> </a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> More Sustainable  </p> </a>
+                            </div>
+                            <div class="col">
+                                <a href="#"><img src="05744e44f4184675a79e83646555cb04.webp" alt="" class="img1"></a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div></div>
+            <div class="col first all"><a href="#"class="ahoy mainke3">Brands</a>
+                <div class="sub-menu-8 mt-1">
+                    
+                    <div class="container text-start">
+                        <div class="row bg-light pt-3">
+                            <div class="col">
+                                <p class="spe">Clothing</p>
+                                <p><i class="fa-solid fa-shapes"></i><span class="aho"> All categories</span></p>
+                                <p><i class="fa-solid fa-shapes"></i><span class="aho"> NEW in Clothing</span></p>
+                                <p><i class="fa-solid fa-shapes"></i><span class="aho"> Zalando exclusives</span></p>
+                                <p><i class="fa-solid fa-shapes"></i><span class="aho"> Tshirts & Polos</span></p>
+                                <p><i class="fa-solid fa-shapes"></i><span class="aho"> Shirts</span></p>
+                                <p><i class="fa-solid fa-shapes"></i><span class="aho"> Sweatshirts & Hoodies</span></p>
+                                <p><i class="fa-solid fa-shapes"></i><span class="aho"> Jeans</span></p>
+                                <p><i class="fa-solid fa-shapes"></i><span class="aho"> Trousers</span></p>
+                                <p><i class="fa-solid fa-shapes"></i><span class="aho"> Shorts</span></p>
+                                <p><i class="fa-solid fa-shapes"></i><span class="aho"> Sportswear</span></p>
+                                <p><i class="fa-solid fa-shapes"></i><span class="aho"> Tracksuit & Joggers</span></p>
+                            </div>
+                            <div class="col">
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Suits & Tailoring</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Jackets</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Coats </p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> KnitWear</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Swimwear</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Plus Size</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> More sustainable clothing</p></a>
+                                <p class="spe">Highlights</p>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Unisex</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Essentials</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Personal Styling</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Special Occasions</p></a>
+                            </div>
+                            <div class="col">
+                                <p class="spe">Underwear</p>
+                                <p><i class="fa-solid fa-shapes"></i><a href="#"class="aho"> All in underwear</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href="#"class="aho"> NEW in underwear</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href="#"class="aho"> Underwear sets</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href="#"class="aho"> Underpants</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href="#"class="aho"> Boxer shorts</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href="#"class="aho"> Undershirts</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href="#"class="aho"> Socks</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href="#"class="aho"> Pyjamas</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href="#"class="aho"> Pyjama trousers</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href="#"class="aho"> Loungewear & Sleepwear</p></a>
+                                <p><i class="fa-solid fa-shapes"></i>Bathrobes</p>
+                            </div>
+                            <div class="col">
+                                <a href="#"><img src="76a9f73dbfed46369302c13e3c64e895.webp" alt="" class="img1"></a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div></div>
+            <div class="col first all"><a href="#"class="ahoy mainke2">Sale</a>
+                <div class="sub-menu-9 mt-1">
+                    
+                    <div class="container text-start">
+                        <div class="row bg-light pt-3">
+                            <div class="col">
+                                <p class="spe">Get the Look</p>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> All outfits</p></a> 
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Casual outfits</p></a> 
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Streetwear outfits</p></a> 
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Sporty outfits</p></a> 
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Bold outfits</p></a> 
+                            </div>
+                            <div class="col">
+                                <p class="spe">Trends</p>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Festival Season</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Romantic looks</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Beach-inspired looks</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Resort shirts</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Streetwear edit</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Casual holiday styles</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Genderless fashion</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Futuristic utility</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Summer t-shirts</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Timeless mautical styles</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Summer sandals</p></a>
+                            </div>
+                            <div class="col">
+                                <p class="spe">Highlights</p>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> #shoplocal</p> </a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Plus Early Access</p> </a>
+                            </div>
+                            <div class="col">
+                                <a href="#"><img src="4ee91971752241abb92e14754371ea58.webp" alt="" class="img1"></a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div></div>
+            <div class="col first all "><a href="#" class="ahoy mainke" >O<span class="mainke4">rd</span><span class="mainke5">er</span></a>
+                <div class="sub-menu-10 mt-1">
+                    
+                    <div class="container text-start ">
+                        <div class="row bg-light pt-3 ">
+                            <div class="col">
+                                <p class="spe">Shoes</p>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> All kategories</p></a> 
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> NEW in Shoes</p></a> 
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Zalando Exclusives</p></a> 
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Trainer </p></a> 
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Pumps </p></a> 
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> High Heels </p></a> 
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Ankle boots </p></a> 
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Boots </p></a> 
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Flat Shoes </p></a> 
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Loafers </p></a> 
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Lace-up Shoes </p></a> 
+                                
+                            </div>
+                            <div class="col">
+                                
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Ballet pumps </p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Sandals </p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Mules</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Beach shoes</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Outdoor shoes </p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Sport shoes</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Bridal shoes</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Business shoes</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Slippers</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Wide fit shoes</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Summer sandals</p></a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Shoes accessories </p></a>
+                            </div>
+                            <div class="col">
+                                <p class="spe">Highlights</p>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> footwear trends</p> </a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Sneaker  </p> </a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Sneaker Hop Drops  </p> </a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> Release Calendar  </p> </a>
+                                <p><i class="fa-solid fa-shapes"></i><a href=""class="aho"> More Sustainable  </p> </a>
+                            </div>
+                            <div class="col">
+                                <a href="#"><img src="4ee91971752241abb92e14754371ea58.webp" alt="" class="img1"></a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div></div>
+            <div class="col">
+              <input type="search" class="site-search" name="search" placeholder="      Search">
+                
+        </div>
+        
+    </div>
+    </div>
+    <!-- card -->
+    <div class="cards">
+        <div class="row" >
+            <div class="col"><a href="#"  ><img class="cards-img" src="098d458d-80cc-40c7-9a4d-d917746d2b62.webp" alt=""></a></div>
+            <div class="col mt-5"><h5 class="display-5">Holiday outfits on sale</h5>
+                <h4>Looks for your next vacation</h4>
+        </div>
+    </div>
+    
+    
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
+
